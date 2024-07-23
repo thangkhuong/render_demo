@@ -31,6 +31,7 @@ data = pd.DataFrame({'Hospital': hospital, 'Age': age, 'Severity': severity, 'LO
 
 # Initialize Dash app
 app = Dash(__name__, external_stylesheets=[dbc.themes.BOOTSTRAP])
+server = app.server
 
 # Layout of the app
 app.layout = dbc.Container([
